@@ -4,9 +4,7 @@
 int main()
 {
 	bool x = true;
-	int a, b;
-	printf("Number a: "), scanf("%d", &a);
-	printf("Number b: "), scanf("%d", &b);
+	int a = 8, b=5;
 	x = a<b;
 	if(x)
 	{
