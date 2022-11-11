@@ -95,7 +95,7 @@ int main()
     switch (selection)
     {
     case 1:
-        system("cls"),printf("Academic ranking.\n") ,lesson1();
+        system("cls"), printf("Academic ranking.\n") ,lesson1();
         break;
     case 2:
         system("cls"),printf("1st order equation.\n") ,lesson2();
