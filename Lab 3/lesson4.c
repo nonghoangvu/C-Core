@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h>//NONG HOANG VU_PH33506
 #include<math.h>
 #include<stdlib.h>
 #define LEVEL1 50
@@ -85,7 +85,9 @@ int lesson4()
 int main()
 {
     int selection;
+    char name[13] = "Nong Hoang Vu";
     system("cls");
+    printf("Copyright By: %s\n", name);
     printf("====== MENU ======\n");
     printf("1. Academic ranking.\n");
     printf("2. 1st order equation.\n");
