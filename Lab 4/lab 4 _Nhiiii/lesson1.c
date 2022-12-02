@@ -4,19 +4,19 @@ int main()
 {
     int min, max;
     int i = min;
-    float sum = 0, count = 0, average;
-    system("cls"), system("color 1");
+    system("cls");
+    float Tong = 0, Dem = 0, Trung_Binh;
     printf("Min: "), scanf("%d", &min);
     printf("Max: "), scanf("%d", &max);
     while(i<=max)
     {
         if(i%2==0)
         {
-            sum+=i;
-            count ++;
+            Tong+=i;
+            Dem ++;
         }
         i++;
     }
-    average = sum/count ;
-    printf("Average: %g", average);
+    Trung_Binh = Tong/Dem ;
+    printf("Trung binh: %g", Trung_Binh);
 }
