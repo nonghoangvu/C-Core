@@ -18,7 +18,7 @@ void SORT(char STRING[][20])
 {
     for (int i = 0; i < 4; i++)
     {
-        for (int j = 0; j < 5; j++)
+        for (int j = i + 1; j < 5; j++)
         {
             if (strcmp(STRING[i], STRING[j]) > 0)
             {
