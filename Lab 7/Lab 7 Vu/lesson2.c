@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h>//NONG HOANG VU_PH33506
 #include<string.h>
 #include<stdlib.h>
 #include<unistd.h>
@@ -10,7 +10,7 @@ struct Login
 void main()
 {
 	const char USERNAME[] = "admin";
-	const char PASSWORD[] = "12345";
+	const char PASSWORD[] = "your_password";
 	do
 	{
 		system("cls");

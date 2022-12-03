@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>//NONG HOANG VU_PH33506
 #include <stdio.h>
 #include <stdlib.h>
 struct STUDENT
@@ -11,7 +11,7 @@ struct STUDENT
 int main()
 {
     int N;
-    system("cls");
+    system("cls"), system("color 6");
     printf("Required number of students: "), scanf("%d", &N);
     struct STUDENT Student[N];
     for (int i = 0; i < N; i++)
@@ -22,27 +22,26 @@ int main()
         printf("Major: "), fflush(stdin), gets(Student[i].major);
         printf("Medium score: "), scanf("%f", &Student[i].mediumScore);
     }
-    for(int x = 0; x < N - 1; x++)//Sort
+    for (int x = 0; x < N - 1; x++) // Sort
     {
         for (int y = x + 1; y < N; y++)
         {
-            if(Student[x].mediumScore > Student[y].mediumScore)
+            if (Student[x].mediumScore > Student[y].mediumScore)
             {
                 struct STUDENT studentTemp;
                 studentTemp = Student[x];
                 Student[x] = Student[y];
                 Student[y] = studentTemp;
-
             }
         }
     }
+    system("cls"), system("color 4");
     for (int i = 0; i < N; i++)
     {
-        printf("\n+-------Student %d-------+", i + 1);
+        printf("\nStudent %d", i + 1);
         printf("\nStudent code: %s\n", Student[i].studentCode);
         printf("Name Student: %s\n", Student[i].nameStudent);
         printf("Major: %s\n", Student[i].major);
         printf("Medium score: %.1f\n", Student[i].mediumScore);
     }
-
 }

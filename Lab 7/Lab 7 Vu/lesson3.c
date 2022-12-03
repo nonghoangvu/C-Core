@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>//NONG HOANG VU_PH33506
 #include <string.h>
 void GET(char STRING[][20])
 {

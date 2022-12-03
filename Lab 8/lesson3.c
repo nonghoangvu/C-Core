@@ -1,5 +1,4 @@
-
-#include <stdio.h>
+#include <stdio.h>//NONG HOANG VU_PH33405
 #include <stdlib.h>
 #include <string.h>
 struct STUDENT
@@ -12,7 +11,7 @@ struct STUDENT
 int main()
 {
     int N;
-    system("cls");
+    system("cls"), system("color 6");
     printf("Required number of students: "), scanf("%d", &N);
     struct STUDENT Student[N];
     for (int i = 0; i < N; i++)
@@ -23,23 +22,17 @@ int main()
         printf("Major: "), fflush(stdin), gets(Student[i].major);
         printf("Medium score: "), scanf("%f", &Student[i].mediumScore);
     }
-    // RETYPE:
     char studentCode[10];
-    printf("Student ID to find: "), fflush(stdin), gets(studentCode);
+    system("color 4");
+    printf("\nStudent ID to find: "), fflush(stdin), gets(studentCode);
     for (int z = 0; z < N; z++)
     {
         if (strcmp(Student[z].studentCode, studentCode) == 0)
         {
-            printf("Student found");
-            printf("\nStudent code: %s\n", Student[z].studentCode);
+            printf("Student found\n\nStudent code: %s\n", Student[z].studentCode);
             printf("Name Student: %s\n", Student[z].nameStudent);
             printf("Major: %s\n", Student[z].major);
             printf("Medium score: %.1f\n", Student[z].mediumScore);
-        }
-        else
-        {
-            printf("Student does not exist!\n");
-            // goto RETYPE;
         }
     }
 }
