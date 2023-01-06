@@ -370,7 +370,7 @@ void Control6(int moneyBorrow)
         Charge = Principal + Profit;
         Overage = Overage - Principal;
         printf("_____________________________________________________________________________________________\n");
-        printf("%4d ", i + 1);
+        printf("%4d ", i);
         printf("%12d ", Profit);
         printf("%18d ", Principal);
         printf("%25d ", Charge);
@@ -405,7 +405,7 @@ void Control7(float loanRate)
         double total = payInterest + Monthly_payment_amount;
         money = money - Monthly_payment_amount;
         printf("_____________________________________________________________________________________________\n");
-        printf("%4d ", i + 1);
+        printf("%4d ", i);
         printf("%12.2f ", payInterest);
         printf("%18.2f ", Monthly_payment_amount);
         printf("%25.2f ", total);
@@ -601,9 +601,9 @@ void main()
     system("cls");
     for (int i = 0; i < 3; i++)
     {
-        printf("\033[0;31mOpening the program.  \r"), usleep(1000 * 400);
-        printf("\033[0;32mOpening the program.. \r"), usleep(1000 * 400);
-        printf("\033[0;33mOpening the program...\r\033[1;37m"), usleep(1000 * 400);
+        printf("\033[0;31mNong_Hoang_Vu_PH33506.  \r"), usleep(1000 * 400);
+        printf("\033[0;32mNong_Hoang_Vu_PH33506.. \r"), usleep(1000 * 400);
+        printf("\033[0;33mNong_Hoang_Vu_PH33506...\r\033[1;37m"), usleep(1000 * 400);
     }
     do
     {
@@ -798,7 +798,7 @@ void main()
         CASE7:
             system("cls");
             printf("_______________Car loan program_______________\n\n");
-            printf("\nEnter the maximum loan percentage: "), scanf("%lf", &loanRate);
+            printf("\nEnter the maximum loan percentage (10% => 0.10): "), scanf("%lf", &loanRate);
             Control7(loanRate);
             printf("\nDo you want to return to the Menu?? [Y/N]: "), fflush(stdin), gets(HOME);
             if (strcmp(HOME, "N") == 0 || strcmp(HOME, "n") == 0)
